@@ -1,0 +1,65 @@
+/* 
+    Using noto sans as font for the text.
+    We want our page to be a "dark theme" so we use a dark background color.
+    We want our text to be readable so we use a light text color.
+    We use light bue as an accent color
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    --accent-color: rgb(0, 189, 214);
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+#console {
+    max-height: fit-content;
+    width: 100%;
+    /* Align always to the bottom of the screen */
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    /* Make the font look like a terminal */
+    font-family: 'Source Code Pro', monospace;
+}
+
+#graph {
+    width: 70%;
+    height: 70%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+}
+
+.info {
+    /* Fills up the rest of the screen that the graph doesnt cover */
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    top: 70%;
+    left: 15%;
+    right: 25%;
+    bottom: 0;
+
+    font-family: 'Black Ops One', sans-serif; 
+
+    /* The font should be bold */
+    font-weight: bold;
+
+    /* The font size should be set so that it always fills up its area */
+    font-size: 6vw;
+}
+
+acc {
+    color: var(--accent-color);
+}

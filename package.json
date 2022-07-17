@@ -1,0 +1,15 @@
+{
+  "name": "koinz",
+  "version": "1.0.0",
+  "description": "Application acting as both front-end and back-end for koinz",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.8"
+  }
+}

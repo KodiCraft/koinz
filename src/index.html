@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Koinz manager and display</title>
+  </head>
+  <body>
+    <!--- This will contain our graph -->
+    <div id="graph">
+      <canvas id="myChart"></canvas>
+    </div>
+    <!--- This will contain our public information -->
+    <div class="info">
+        <p><acc id="current-price">50</acc> koinz pour 1 maroul</p>  
+    </div>
+    <!--- This will contain the console in which the admin will type -->
+    <div id="console">
+      <div id="console-output">
+        <div id="console-output-text">Please enter a command</div>
+      </div>
+      <div id="console-help">
+        <div id="console-help-text" class="accent-color">Please begin typing a command</div>
+      </div>
+      <div id="console-input">
+        <input type="text" id="console-input-text" class="form-control" placeholder="Enter command here">
+      </div>
+    </div>
+    
+    <script src="curr-controls.js"></script>
+    <script src="curr-algo.js"></script>
+    <script src="chart-renderer.js"></script>
+  </body>
+</html>
